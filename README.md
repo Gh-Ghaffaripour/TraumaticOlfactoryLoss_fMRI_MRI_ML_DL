@@ -5,4 +5,4 @@ This repository contains the codebase for our research on diagnosing traumatic o
 -------------------------------------------------------------------------------------------------   
 IDS team 44:  
 Supervisor: Prof. Abolhasan Rezaeyan  
-Members: Ghazale ghaffaripour, Fatemeh Arezoomand, Samin Afzoonkar, Mahsa Bahrami, Arman Khanjani  
+Members: Ghazale Ghaffaripour, Fatemeh Arezoomand, Samin Afzoonkar, Mahsa Bahrami, Arman Khanjani  
