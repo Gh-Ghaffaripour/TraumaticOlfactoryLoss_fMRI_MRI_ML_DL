@@ -1,0 +1,70 @@
+import pandas as pd
+import numpy as np
+import os
+
+# ============================
+# Configuration
+# ============================
+base_folder = r"D:\image_group_data\team44"
+output_folder = os.path.join(base_folder, "Analysis")
+
+prefix = "git_combine_"
+
+# Input & Output Files
+input_file = os.path.join(output_folder, f"{prefix}subR.csv")
+output_file = os.path.join(output_folder, f"{prefix}subR_missing.csv")
+
+missing_handling = "remove"  # "replace" or "remove"
+
+# =============================================
+# Data Cleaning Script
+# ==============================================
+
+# Load dataset
+df = pd.read_csv(input_file)
+
+# Identify Issues
+missing_counts = df.isnull().sum()
+inf_counts = ((df == np.inf) | (df == -np.inf)).sum()
+duplicate_rows = df.duplicated().sum()
+duplicate_columns_mask = df.T.duplicated()
+constant_columns_mask = df.nunique() <= 1
+high_missing_mask = missing_counts > (0.5 * len(df))
+
+# Report identified issues
+print("Issues Before Cleaning:")
+print("Missing values:\n", missing_counts[missing_counts > 0])
+print("Infinite values:", inf_counts[inf_counts > 0])
+print("Duplicate rows:", duplicate_rows)
+print("Duplicate columns:", df.columns[duplicate_columns_mask].tolist())
+print("Constant columns:", df.columns[constant_columns_mask].tolist())
+
+# Cleaning Steps
+# Remove Duplicate Columns
+df = df.loc[:, ~duplicate_columns_mask]
+
+# Remove Constant Columns
+constant_columns_mask = df.nunique() <= 1
+df = df.loc[:, ~constant_columns_mask]
+
+# Remove Columns with >50% Missing Values
+high_missing_columns = missing_counts[missing_counts > (0.5 * len(df))].index.tolist()
+df = df.drop(columns=high_missing_columns, errors='ignore')
+
+# Replace Infinite values with NaN
+df.replace([np.inf, -np.inf], np.nan, inplace=True)
+
+# Remove Columns with Any Missing Values
+df = df.dropna(axis=1)
+
+# Final Verification
+print("\nFinal Data Check:")
+print("Missing values remaining:", df.isnull().sum().sum())
+print("Infinite values remaining:", ((df == np.inf) | (df == -np.inf)).sum().sum())
+print("Duplicate rows remaining:", df.duplicated().sum())
+print("Constant columns remaining:", (df.nunique() <= 1).sum())
+
+# Save Cleaned Data
+df.to_csv(output_file, index=False)
+
+print(f"Cleaned data saved at: {output_file}")
