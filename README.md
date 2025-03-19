@@ -87,7 +87,7 @@ This project leverages supervised Machine Learning and Deep Learning methods to 
 This project is a collaborative effort by **IDS Team 44**. The primary **code development** has been led by **Ghazale Ghaffaripour**, with contributions from **Samin Afzoonkar**. Other team members have been involved in **data preprocessing, analysis, and research article preparation**. 
 
 ### **Code Contributions (Confirmed So Far):**
-- **Ghazale Ghaffaripour** – Lead Developer, Core ML/DL Implementation, Data Processing,Research Article Writing, Documentation 
+- **Ghazale Ghaffaripour** – Lead Developer, Core ML/DL Implementation, Data Processing ,Preprocessing (CONN, FreeSurfer), Research Article Writing, Documentation 
 - **Samin Afzoonkar** – Outlier Detection & Correlation Removal, Preprocessing (FreeSurfer) , Data Analysis, Research Article Writing, Documentation  
 
 ### **Additional Contributions (To Be Finalized with Article Completion):**
