@@ -13,6 +13,7 @@ prefix = "git_combine_"
 input_file = os.path.join(output_folder, f"{prefix}subR_missing.csv")
 output_file = os.path.join(output_folder, f"{prefix}subR_missing_out.csv")
 
+
 # =============================================
 # Outlier Detection Script
 # ==============================================
@@ -40,6 +41,10 @@ if len(outlier_subjects) < 0.1 * len(df):
     df_cleaned = df.drop(index=outlier_subjects)
 else:
     df_cleaned = df.copy()
+
+# Re‑order columns so ID & Label come first
+ordered_cols = ['Subject_ID', 'Label'] + [c for c in df_cleaned.columns if c not in ['Subject_ID', 'Label']]
+df_cleaned = df_cleaned[ordered_cols]
 
 # Save the cleaned dataset
 df_cleaned.to_csv(output_file, index=False)
