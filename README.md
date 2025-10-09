@@ -7,9 +7,9 @@
 
 ## Team Information
 - **Supervisor:** Dr. Abolhasan Rezaeyan
-- **Lead Developer:** Ghazale Ghaffaripour
+- **Lead Developer:** Ghazaleh Ghaffaripour
 - **Team Members:**
-  - Ghazale Ghaffaripour
+  - Ghazaleh Ghaffaripour
   - Fatemeh Arezoomand
   - Samin Afzoonkar
   - Arman Khanjani
@@ -84,10 +84,10 @@ This project leverages supervised Machine Learning and Deep Learning methods to 
 - Build accurate and interpretable classification models.
 
 ## Contributions (Ongoing)
-This project is a collaborative effort by **IDS Team 44**. The primary **code development** has been led by **Ghazale Ghaffaripour**, with contributions from **Samin Afzoonkar**. Other team members have been involved in **data preprocessing, analysis, and research article preparation**. 
+This project is a collaborative effort by **IDS Team 44**. The primary **code development** has been led by **Ghazaleh Ghaffaripour**, with contributions from **Samin Afzoonkar**. Other team members have been involved in **data preprocessing, analysis, and research article preparation**. 
 
 ### **Code Contributions (Confirmed So Far):**
-- **Ghazale Ghaffaripour** – Lead Developer, Core ML/DL Implementation, Data Processing ,Preprocessing (CONN, FreeSurfer), Research Article Writing, Documentation 
+- **Ghazaleh Ghaffaripour** – Lead Developer, Core ML/DL Implementation, Data Processing ,Preprocessing (CONN, FreeSurfer), Research Article Writing, Documentation 
 - **Samin Afzoonkar** – Outlier Detection & Correlation Removal, Preprocessing (FreeSurfer) , Data Analysis, Research Article Writing, Documentation  
 
 ### **Additional Contributions (To Be Finalized with Article Completion):**
@@ -109,16 +109,16 @@ Research papers and datasets may have different licensing—please refer to thei
 
 <h1>TraumaticOlfactoryLoss_fMRI_MRI_ML</h1>
 <p><strong>Repository for analysis of MRI and fMRI data to detect traumatic olfactory loss using Machine Learning methods.</strong><br>
-<em>(This repo now uses a single, end-to-end Python pipeline instead of separate step scripts.)</em></p>
+<em>(This repo uses a single, end-to-end Python pipeline.)</em></p>
 <hr>
 
 <h2>Team Information</h2>
 <ul>
   <li><strong>Supervisor:</strong> Dr. Abolhasan Rezaeyan</li>
-  <li><strong>Lead Developer:</strong> Ghazale Ghaffaripour</li>
+  <li><strong>Lead Developer:</strong> Ghazaleh Ghaffaripour</li>
   <li><strong>Team Members:</strong>
     <ul>
-      <li>Ghazale Ghaffaripour</li>
+      <li>Ghazaleh Ghaffaripour</li>
       <li>Fatemeh Arezoomand</li>
       <li>Samin Afzoonkar</li>
       <li>Arman Khanjani</li>
@@ -301,11 +301,11 @@ pip install xgboost lightgbm catboost
 
 <hr>
 <h2>Contributions (Ongoing)</h2>
-<p>This project is a collaborative effort by <strong>IDS Team 44</strong>. The primary <strong>code development</strong> has been led by <strong>Ghazale Ghaffaripour</strong>, with contributions from <strong>Samin Afzoonkar</strong>. Other team members have been involved in <strong>data preprocessing, analysis, and research article preparation</strong>.</p>
+<p>This project is a collaborative effort by <strong>IDS Team 44</strong>. The primary <strong>code development</strong> has been led by <strong>Ghazaleh Ghaffaripour</strong>, with contributions from <strong>Samin Afzoonkar</strong>. Other team members have been involved in <strong>data preprocessing, analysis, and research article preparation</strong>.</p>
 
 <h3>Code Contributions (Confirmed So Far)</h3>
 <ul>
-  <li><strong>Ghazale Ghaffaripour</strong> – Lead Developer; Core ML Implementation; Data Processing/Preprocessing (CONN, FreeSurfer); Research Article Writing; Documentation</li>
+  <li><strong>Ghazaleh Ghaffaripour</strong> – Lead Developer; Core ML Implementation; Data Processing/Preprocessing (CONN, FreeSurfer); Research Article Writing; Documentation</li>
   <li><strong>Samin Afzoonkar</strong> – Outlier Detection &amp; Correlation Removal; Preprocessing (FreeSurfer); Data Analysis; Research Article Writing; Documentation</li>
 </ul>
 
