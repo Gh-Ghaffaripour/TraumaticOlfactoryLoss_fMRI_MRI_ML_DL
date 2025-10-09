@@ -170,7 +170,6 @@ pip install xgboost lightgbm catboost
   <li><strong>Run</strong>
     <pre><code>python pipeline_v1.py
 </code></pre>
-    <p>(Rename the file in the command if your script has a different name.)</p>
   </li>
 </ol>
 
@@ -299,7 +298,6 @@ pip install xgboost lightgbm catboost
 <p>Optional (enables extra model families if present):</p>
 <pre><code>pip install xgboost lightgbm catboost
 </code></pre>
-<p><strong>Removed from old README:</strong> <code>seaborn</code>, <code>shap</code> (not used by the current pipeline).</p>
 
 <hr>
 <h2>Contributions (Ongoing)</h2>
@@ -314,7 +312,6 @@ pip install xgboost lightgbm catboost
 <h3>Additional Contributions (To Be Finalized with Article)</h3>
 <ul>
   <li><strong>Fatemeh Arezoomand</strong> – Preprocessing (CONN, FreeSurfer); Research Article Writing; Documentation</li>
-  <li><strong>Mahsa Bahrami</strong> – Research Article Writing; Documentation</li>
   <li><strong>Arman Khanjani</strong> – Preprocessing (CONN, FreeSurfer); Research Article Writing; Documentation</li>
 </ul>
 <p>Final contributions will be updated upon completion of the research article.</p>
